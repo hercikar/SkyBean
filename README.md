@@ -1,7 +1,8 @@
 SkyBean
 =====
 <b>I am not so familiar with programming, my goal is to modify firmware to have a beeping vario, which is able to send data to Kobo!</b><br>
-
+<b>This firmware and also the source code itself will NOT be user friendly!</b><br>
+<b>I don´t expect frequent programming and modyfying, so lots of values will be hard-written, not defined through some list of variables!</b><br>
 
 <b>vario</b><br>
 SkyBean vario source code<br>
