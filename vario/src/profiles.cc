@@ -120,12 +120,18 @@ void configurator_loop()
 					break;
 				}
 
-				//block_update is not working (why??)
+				//block_update is not working (why??) - "Solved" below
 				for (uint16_t i=0; i<sizeof(data_buffer); i++)
 				{
 					eeprom_busy_wait();
 					eeprom_update_byte((uint8_t *)i, data_buffer[i]);
 				}
+				
+				//For me the most important function is the loud beeping and sending data
+				//No matter what you save through SkyBean configurator, buzzer_volume will be "4" and serial_output "1"
+				eeprom_busy_wait();
+				eeprom_update_byte(&ee_cfg.buzzer_volume, 4);
+				eeprom_update_byte(&ee_cfg.serial_output, 1);
 
 				//all done
 				printf("o");
