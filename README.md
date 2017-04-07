@@ -1,5 +1,7 @@
 SkyBean
 =====
+<b>I am not so familiar with programming, my goal is to modify firmware to have a beeping vario, which is able to send data to Kobo!</b><br>
+
 
 <b>vario</b><br>
 SkyBean vario source code<br>
